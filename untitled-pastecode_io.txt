@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Marketplace</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .service { border: 1px solid #ddd; padding: 20px; margin: 20px 0; border-radius: 8px; }
+        .price { font-size: 24px; color: #28a745; font-weight: bold; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Buy Legit Services</h1>
+    
+    <div class="service">
+        <h2>Graphic Design Package</h2>
+        <p>Custom logos & banners. Real human designers.</p>
+        <div class="price">$49</div>
+        <button onclick="buy('Graphic Design')">Buy Now</button>
+    </div>
+    
+    <div class="service">
+        <h2>Social Media Management</h2>
+        <p>Organic growth strategies & content creation.</p>
+        <div class="price">$99/mo</div>
+        <button onclick="buy('Social Media Management')">Buy Now</button>
+    </div>
+
+    <script>
+        function buy(service) {
+            alert(`Purchased ${service}! (Demo - Integrate Stripe/PayPal for real payments)`);
+        }
+    </script>
+</body>
+</html>
